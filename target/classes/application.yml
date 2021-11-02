@@ -1,0 +1,8 @@
+ldap:
+  principal: cn=admin,DC=test,DC=oventus,DC=com
+  password: admin
+  port: 389
+  url: ldap://localhost:389
+
+server:
+  port: 8086

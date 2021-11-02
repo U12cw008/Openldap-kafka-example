@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  openldap:
+    command: --copy-service --loglevel debug
+    image: "osixia/openldap:1.5.0"
+    ports:
+      - "389:389"
+    environment:
+      LDAP_ADMIN_PASSWORD: "admin"
+      LDAP_DOMAIN: "test.oventus.com"
+      LDAP_BASE_DN: "DC=test,DC=oventus,DC=com"
+      LDAP_LOG_LEVEL: 256
+    volumes:
+      - ./openldap/ldif/users.ldif:/container/service/slapd/assets/config/bootstrap/ldif/custom/20-bootstrap-users.ldif
+      - ./openldap/ldif/config.ldif:/container/service/slapd/assets/config/bootstrap/ldif/custom/10-bootstrap-config.ldif
