@@ -32,9 +32,9 @@ public class SpringBootLdapApplication implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		//CREATE
-		/*createUser("Amitoj", "Hanspal", "56099781", "Product Development");
+		/*createUser("a", "ab", "56099781", "Accounting");
 		createUser("Sachin", "Nikam", "56099782", "Product Development");*/
-		//createUser("manoj1", "Ashford", "56099783", "Management");
+		//createUser("manoj1", "yadav", "56099783", "Accounting");
 
 		//UPDATE
 		//userAccountsLDAPRepository.modifyUsername("56099783", "Danielle Ashford");
@@ -42,7 +42,7 @@ public class SpringBootLdapApplication implements ApplicationRunner {
 
 		//SEARCH
 		//UserAccountLDAPDetails user = new UserAccountLDAPDetails();
-		//user.setFirstname("Amitoj");
+		//user.setFirstname("Manoj");
 		//UserAccountsLDAPRepository userAccountsLDAPRepository = new UserAccountsLDAPRepository();
 		//userAccountsLDAPRepository.search(user);
 
